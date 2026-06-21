@@ -39,7 +39,7 @@ All code provided must follow these strict professional standards:
 * **Nested Documentation:** When documenting functions, include sub-jsDoc annotations for internal values/parameters to ensure  they align with the primary jsDoc block.
 * **Auto-generation:** You **must** generate appropriate jsDoc documentation unless explicitly forbidden.
 * **Argument Validation:** All functions must include runtime validators using `throw` statements to check if the arguments correctly match the types and constraints defined in the indicated jsDoc.
-* **Correction & Reporting:** Correct incorrectly written jsDoc values and append a report at the end of your response indicating exactly which corrections were made.
+* **Correction & Reporting:** Correct incorrectly written jsDoc values and append a report at the end of your response indicating exactly which jsDoc corrections were made ONLY IF at least one correction occurred.
 
 ### CSS & SCSS Specifications
 
