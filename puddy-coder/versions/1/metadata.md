@@ -1,79 +1,37 @@
 ## Agent Metadata
-
-### Name
-
-Puddy Coder
-
-### Description
-
-The super tiny coder agent to your tiny works!
-
-### Category
-
-TI
+- **Name:** Puddy Coder
+- **Description:** The super tiny coder agent to your tiny works!
+- **Category:** TI
 
 ## Transfer Agent List
 
-### 🏗️ Architect (transfer-agents/architect)
+### 🏗️ Architect (`transfer-agents/architect`)
+- **Transfer Description:** Transfer to the Architect agent to initiate project planning, structural design, and technical architecture definition.
+- **Content info:** A detailed and structured summary of the project requirements, desired tech stack, and initial scope. 
+  - **Language Protocol:** This summary must be written in the user's language. However, it must strictly respect any language-specific constraints defined in the conversation (e.g., if the user or system requires code, comments, or technical terms to be in English, those elements must remain in English within this summary).
+- **Param Name:** `architectural_context`
 
-#### Transfer Description
-
-Transfer to the Architect agent to initiate project planning, structural design, and technical architecture definition.
-
-#### Content info
-
-A detailed and structured summary of the project requirements, desired tech stack, and initial scope. 
-**Language Protocol:** This summary must be written in the user's language. However, it must strictly respect any language-specific constraints defined in the conversation (e.g., if the user or system requires code, comments, or technical terms to be in English, those elements must remain in English within this summary).
-
-#### Param Name
-
-architectural_context
-
-### ✍️ Documentation Writer (transfer-agents/doc-writer)
-
-#### Transfer Description
-
-Transfer to the Documentation Writer agent to execute the generation of technical documentation based on confirmed specifications.
-
-#### Content info
-
-A comprehensive breakdown of the documentation requirements, including confirmed specifications, tone, structural guidelines, and target audience. 
-**Language Protocol:** This summary must be written in the user's language. However, it must strictly respect any language-specific constraints defined in the conversation (e.g., if the user or system requires code, comments, or technical terms to be in English, those elements must remain in English within this summary).
-
-#### Param Name
-
-documentation_specs
+### ✍️ Documentation Writer (`transfer-agents/doc-writer`)
+- **Transfer Description:** Transfer to the Documentation Writer agent to execute the generation of technical documentation based on confirmed specifications.
+- **Content info:** A comprehensive breakdown of the documentation requirements, including confirmed specifications, tone, structural guidelines, and target audience. 
+  - **Language Protocol:** This summary must be written in the user's language. However, it must strictly respect any language-specific constraints defined in the conversation (e.g., if the user or system requires code, comments, or technical terms to be in English, those elements must remain in English within this summary).
+- **Param Name:** `documentation_specs`
 
 ## Subagents
+- 🛡️ Security Reviewer (`subagents/sec-reviewer`)
 
-🛡️ Security Reviewer (subagents/sec-reviewer)
+## Support & Contact
+- **Contact Name:** Tiny Jasmini
+- **Email:** `tiny@pony.house`
 
-## Support Contact
+## Technical Validation (Testing Environment)
 
-Name: Tiny Jasmini
+### Environment
+- **Client:** LibreChat
 
-Email: tiny@pony.house
-
-## Tested on
-
-### Clients
-
-LibreChat
-
-### Models
-
-Gemma4
-
-#### Temperature
-
-0.7 (Testing...)
-
-0.1 (30% tested)
-
-#### Frequency Penalty
-
-0
-
-#### Presence Penalty
-
-0
+### Model Configuration: Gemma4
+| Parameter | Value / Status |
+| :--- | :--- |
+| **Temperature** | 0.7 (Testing...) <br> 0.1 (30% tested) |
+| **Frequency Penalty** | 0 |
+| **Presence Penalty** | 0 |
